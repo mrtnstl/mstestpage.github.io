@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tűztorony Caffee</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="popupWrapper">
+            
+            <i class="fa fa-times popupWrapperClosebtnReserve"></i>
+            <div class="popupReserve">
+                <form>
+                    <p class="popupLogo">Tűztorony Caffee</p>
+                    <p>Hely foglalás:</p>
+                    <label>Az email címed</label>
+                    <input type="email">
+                    <label>Hány főre?</label>
+                    <input type="number" min="2" max="5">
+                    <label>Melyik napra?</label>
+                    <input type="date">
+                    <label>És mikor?</label>
+                    <input type="time">
+                    <button type="button" class="buttonAct buttonSend">Lefoglalás</button>
+                </form>
+            </div>
+            <i class="fa fa-times popupWrapperClosebtnContact"></i>
+            <div class="popupContact">
+                <form>
+                    <p class="popupLogo">Tűztorony Caffee</p>
+                    <p>Kapcsolat felvétele:</p>
+                    <label>Az email címed</label>
+                    <input type="email">
+                    <label>Az üzenet tárgya</label>
+                    <input type="text" maxlength="30">
+                    <label>És az üzeneted</label>
+                    <textarea maxlength="100"></textarea>
+                    <button type="button" class="buttonAct buttonSend">Üzenet küldése</button>
+                </form>
+            </div>
+
+            <!--<div class="popupShadeReserve">
+                <p></p>
+            </div>-->
+            <div class="popupShade">
+                <div class="popupShadeContent">
+                    <p id="popupShadeText"></p>
+                    <button type="button" class="buttonAct popupShadeButton"></button>
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+
+
+        <div class="header">
+            <div class="headerButtonWrapper headerButtonWrapperLeft">
+                <button type="button" class="buttonAct buttonMenu">
+                    Itallap
+                </button>
+            </div>
+            <div class="headerButtonWrapper headerButtonWrapperCenter">
+                Tűztorony Caffee
+            </div>
+            <div class="headerButtonWrapper headerButtonWrapperRight">
+                <button type="button" class="buttonAct buttonReserve">
+                    Foglalj
+                </button>
+                
+            </div>
+        </div>
+        <div class="hero">
+            <p class="heroTitle">Adjonisten! <img src="./source/images/cup_alt.png"></p>
+            <p>Ez a weboldal/webalkalmazás arra szolgál, hogy egy fikcionális kisvállalkozás/vendéglátóipari egység(Tűztorony Caffee), helyfoglalási felületét modellezze.</p>
+            <button type="button" class="buttonAct buttonReserve">Foglalj most!</button>
+        </div>
+        <div class="slideShow">
+            <!-- Slideshow  -->
+        </div>
+        <div class="about">
+            <p>Rólunk:</p>
+            <p>
+                "Tegyük fel, hogy itt ír magáról pár szót a vállalkozás"<br>
+                <span style="float: right;">-Para Zita</span><br>
+                Ugye milyen jó? Ezen a szekción belül akár lehetne létrehozni egy gombot ami elviszi a felhasználót egy Blog szerű, "Rólunk" oldalra/slide-ra...
+            </p>
+            <img src="./source/images/coffeeshop1.jpg" class="aboutImage">
+        </div>
+        <!--<div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1342.9553151801078!2d16.59090949820199!3d47.68615554452742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1704712483186!5m2!1shu!2shu" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>-->
+        <div class="footer">
+            
+            <div class="footerSection footerSectionTop">
+                <a href="#">Adatvédelem</a>
+                <a class="linkContact">Kapcsolatfelvétel</a>
+            </div>
+            <div class="footerSection footerSectionBottom">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a>Tűztorony Caffee</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
