@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tűztorony Caffee</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="popupWrapper">
+            <i class="fa fa-times popupWrapperClosebtnReserve"></i>
+            <div class="popupReserve">
+                <form>
+                    <p class="popupLogo">Tűztorony Caffee</p>
+                    <p>Hely foglalás:</p>
+                    <label>Az email címed</label>
+                    <input type="email">
+                    <label>Hány főre?</label>
+                    <input type="number" min="2" max="5">
+                    <label>Melyik napra?</label>
+                    <input type="date">
+                    <label>És mikor?</label>
+                    <input type="time">
+                    <button type="button" class="buttonAct buttonSend">Lefoglalás</button>
+                </form>
+            </div>
+            <i class="fa fa-times popupWrapperClosebtnContact"></i>
+            <div class="popupContact">
+                <form>
+                    <p class="popupLogo">Tűztorony Caffee</p>
+                    <p>Kapcsolat felvétele:</p>
+                    <label>Az email címed</label>
+                    <input type="email">
+                    <label>Az üzenet tárgya</label>
+                    <input type="text" maxlength="30">
+                    <label>És az üzeneted</label>
+                    <textarea maxlength="100"></textarea>
+                    <button type="button" class="buttonAct buttonSend">Üzenet küldése</button>
+                </form>
+            </div>
+
+            <div class="popupShade">
+                <div class="popupShadeContent">
+                    <p id="popupShadeText"></p>
+                    <button type="button" class="buttonAct popupShadeButton"></button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="popupWrapperMenu">
+            <i class="fa fa-times popupWrapperClosebtnMenu"></i>
+            <div class="popupWrapperMenuContent">
+                <p class="popupLogo">Tűztorony Caffee</p>
+                <table class="MenuContentTable">
+                    <tr>
+                        <h3 colspan="2">Itallap</h3>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Kávéink</th>
+                    </tr>
+                    <tr>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/espresso.png"></td>
+                        <td>Espresso
+                            <p>A jóöreg rövid kávé.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ristretto
+                            <p>Azt se tudom, mi ez...</p>
+                        </td>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/ristretto.png"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/americano.png"></td>
+                        <td>Americano
+                            <p>Amerikai káávéé!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Machiato
+                            <p>Na jóvan ám, most már ölég lesz</p>
+                        </td>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/macchiato.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/cappuccino.png"></td>
+                        <td>Cappucciono
+                            <p>Emmeg a hosszu kávé!!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Alkoholos italaink</th>
+                    </tr>
+                    <tr>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/espresso.png"></td>
+                        <td>Soproni Világos sör</td>
+                    </tr>
+                    <tr>
+                        <td class="MenuContentTableImageWrapper">Borok(Lővér pince)</td>
+                        <td><img src="./source/images/menu/espresso.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="MenuContentTableImageWrapper"><img src="./source/images/menu/espresso.png"></td>
+                        <td>Házi pálinka különlegesség</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Itallapunk folyamatosan bővül!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="header">
+            <!--<div class="headerButtonWrapper headerButtonWrapperLeft">
+                <button type="button" class="buttonAct buttonMenu">
+                    Itallap
+                </button>
+            -->
+            <div class="headerButtonWrapper headerButtonWrapperCenter">
+                Tűztorony Caffee
+            </div>
+            <div class="headerButtonWrapper headerButtonWrapperRight">
+                <button type="button" class="buttonAct buttonReserve">
+                    Foglalj
+                </button>
+            </div>
+        </div>
+
+        <div class="hero">
+            <p class="heroTitle">Adjonisten! <img src="./source/images/cup_alt.png"></p>
+            <p>Ez a weboldal/webalkalmazás arra szolgál, hogy egy fikcionális kisvállalkozás/vendéglátóipari egység(Tűztorony Caffee), helyfoglalási felületét modellezze.</p>
+            <button type="button" class="buttonAct buttonReserve">Foglalj most!</button>
+        </div>
+        <div class="slideShow">
+            <!-- Slideshow  -->
+        </div>
+        <div class="about">
+            <p>Rólunk:</p>
+            <p>
+                "Tegyük fel, hogy itt ír magáról pár szót a vállalkozás"<br>
+                <span style="float: right;">-Para Zita</span><br>
+                Ugye milyen jó? Ezen a szekción belül akár lehetne létrehozni egy gombot ami elviszi a felhasználót egy Blog szerű, "Rólunk" oldalra/slide-ra...
+            </p>
+            <button type="button" class="buttonAct buttonMenu">
+                Itallap
+            </button>
+            <img src="./source/images/coffeeshop1.jpg" class="aboutImage">
+            <div class="aboutOpenhours">
+                <div><p>Hétfő: </p><p>08:00 - 16:00</p></div>
+                <div><p>Kedd: </p><p>08:00 - 16:00</p></div>
+                <div><p>Szerda: </p><p>08:00 - 16:00</p></div>
+                <div><p>Csütörtök: </p>08:00 - 16:00<p></p></div>
+                <div><p>Péntek: </p><p>10:00 - 22:00</p></div>
+                <div><p>Szombat: </p><p>10:00 - 22:00</p></div>
+                <div><p>Vasárnap: </p><p>08:00 - 12:00</p></div>
+            </div>
+        </div>
+        <!--<div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1342.9553151801078!2d16.59090949820199!3d47.68615554452742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1704712483186!5m2!1shu!2shu" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>-->
+        <div class="footer">
+            
+            <div class="footerSection">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="footerSection">
+                <a href="#">Adatvédelem</a>
+                <a class="linkContact">Kapcsolatfelvétel</a>
+            </div>
+            <div class="footerSection">
+                
+                <a>Tűztorony Caffee</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
