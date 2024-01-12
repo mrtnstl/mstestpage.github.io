@@ -111,30 +111,43 @@ menuBtn.addEventListener("click", () => {
 
 
 
-let date = new Date().toString();
-const dateSplit = date.split(" ");
 
-console.log(dateSplit[0]);
 
-const translateDayName = {"Mon":"Hétfő", "Tue":"Kedd", "Wed":"Szerda", "Thu":"Csütörtök", "Fri":"Péntek", "Sat":"Szombat", "Sun":"Vasárnap"};
+function whatDayIsToday () {
+    let date = new Date().toString();
+    const dateSplit = date.split(" ");
+    
+    console.log(dateSplit[0]);
+    
+    const translateDayName = {"Mon":"Hétfő", "Tue":"Kedd", "Wed":"Szerda", "Thu":"Csütörtök", "Fri":"Péntek", "Sat":"Szombat", "Sun":"Vasárnap"};
+    
+    //console.log(Object.keys(translateDayName))
+    console.log(translateDayName["Thu"]);
+    let today;
+    for(let i = 0; i < Object.keys(translateDayName).length; i++){
+        //console.log("loop")
+        console.log(translateDayName["Sun"])
+        if(dateSplit[0] === Object.keys(translateDayName)[i]){
+            console.log("EGYEZÉS!!!" + translateDayName[Object.keys(translateDayName)[i]]);
+            today = translateDayName[Object.keys(translateDayName)[i]];
+        } else{
+            console.log("NINCS EGYEZÉS")
+        }
+    }
+    
+    let dayToHighlight = document.querySelectorAll(".dayHighlight");
+    for( i = 0; i < dayToHighlight.length; i++){
+        if(dayToHighlight[i].innerHTML.includes(today)){
+            dayToHighlight[i].style.background = "linear-gradient(20deg, red, blue)";
 
-//console.log(Object.keys(translateDayName))
-console.log(translateDayName["Thu"]);
+        } else {
 
-for(let i = 0; i < Object.keys(translateDayName).length; i++){
-    //console.log("loop")
-    console.log(translateDayName["Sun"])
-    if(dateSplit[0] === Object.keys(translateDayName)[i]){
-        console.log("EGYEZÉS!!!" + translateDayName[Object.keys(translateDayName)[i]]);
-        
-    } else{
-        console.log("NINCS EGYEZÉS")
+        }
+        console.log(dayToHighlight[i].innerHTML)
     }
 }
 
-
-
-
+whatDayIsToday();
 
 
 
