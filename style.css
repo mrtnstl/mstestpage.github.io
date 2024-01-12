@@ -19,7 +19,9 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 }
-
+body, html {
+    height: 100%;
+}
 
 .header {
     /*background-color: rgba(0, 0, 0, 0.815);*/
@@ -396,6 +398,7 @@ background-attachment: fixed;
         background-size: cover;
         background-attachment: fixed;
     }
+    
     .popupWrapper {
         width: 600px;
         height: 600px;
@@ -405,7 +408,7 @@ background-attachment: fixed;
         width: 600px;
         height: 600px;
     }
-    .popupReserve {
+    /*.popupReserve {
         width: 50%;
         height: 100%;
         float:left;
@@ -415,7 +418,7 @@ background-attachment: fixed;
         width:50%;
         height: 100%;
         float:right;
-    }
+    }*/
 }
 
 
