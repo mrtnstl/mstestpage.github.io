@@ -7,17 +7,11 @@ window.addEventListener("scroll", (event) => {
     } else {
         header.style.backgroundColor = "black";
     }
-    
 });
-
-
 
 let popupWrapper = document.querySelector(".popupWrapper");
 let popupShade = document.querySelector(".popupShade");
 
-/*let closeBtnReserve= document.querySelector(".popupWrapperClosebtnReserve");
-let closeBtnContact= document.querySelector(".popupWrapperClosebtnContact");
-*/
 let closeBtnObj = ["Reserve", "Contact", "Menu"];
 let i =0;
 while(i < closeBtnObj.length){
@@ -30,19 +24,6 @@ while(i < closeBtnObj.length){
     })
     i++;
 }
-
-/*closeBtnReserve.addEventListener("click", () => {
-    popupWrapper.style.transition= "transform 0.6s ease-in";
-    popupWrapper.style.transform = "translate(0, -100%)";
-    
-})
-closeBtnContact.addEventListener("click", () => {
-    popupWrapper.style.transition= "transform 0.6s ease-in";
-    popupWrapper.style.transform = "translate(0, -100%)";
-    
-})*/
-
-
 
 let reserveBtn = document.querySelectorAll(".buttonReserve");
 for (let i = 0; i < reserveBtn.length; i++) {
@@ -59,7 +40,6 @@ for (let i = 0; i < reserveBtn.length; i++) {
     })
 }
 
-
 let contactBtn = document.querySelector(".linkContact");
 contactBtn.addEventListener("click", () => {
     popupWrapper.style.display = "block";
@@ -72,10 +52,6 @@ contactBtn.addEventListener("click", () => {
 
     switchState = 1;
 })
-
-
-
-
 
 let switchState;
 
@@ -109,10 +85,6 @@ menuBtn.addEventListener("click", () => {
     popupWrapperMenu.style.transform = "translate(0, 0)";
 })
 
-
-
-
-
 function whatDayIsToday () {
     let date = new Date().toString();
     const dateSplit = date.split(" ");
@@ -138,67 +110,18 @@ function whatDayIsToday () {
     let dayToHighlight = document.querySelectorAll(".dayHighlight");
     for( i = 0; i < dayToHighlight.length; i++){
         if(dayToHighlight[i].innerHTML.includes(today)){
-            dayToHighlight[i].style.background = "linear-gradient(20deg, red, blue)";
-
-        } else {
-
-        }
+            //dayToHighlight[i].style.background = "linear-gradient(20deg, red, blue)";
+            dayToHighlight[i].style.textDecoration = "underline";
+        } else {}
         console.log(dayToHighlight[i].innerHTML)
     }
 }
-
 whatDayIsToday();
 
-
-
-/*switch(dateSplit[0]){
-    case "Mon":
-
-        break;
-    case "Tue":
-        
-        break;
-    case "Wed":
-        
-        break;
-    case "Thu":
-        
-        break;
-    case "Fri":
-        
-        break;
-    case "Sat":
-        
-        break;
-    case "Sun":
-        
-        break;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //foglalj gomb: display block, position fixed, transform translate(0, 0)
-
 //foglaló/kapcsolat felület X gomb: transition transform 0.6s ease-in, transform translate(0, -100%)
-
 //Kapcsolat link:
-
 //Kínálatunk gomb:
-
-
-
 
 /*
 range.addEventListener("input", function() {
