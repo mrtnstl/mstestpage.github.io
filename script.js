@@ -17,10 +17,10 @@ let i =0;
 while(i < closeBtnObj.length){
     document.querySelector(".popupWrapperClosebtn"+closeBtnObj[i]).addEventListener("click", () => {
         popupWrapper.style.transition= "transform 0.6s ease-in";
-        popupWrapper.style.transform = "translate(0, -100%)";
+        popupWrapper.style.transform = "translate(0, -150%)";
 
         popupWrapperMenu.style.transition = "transform 0.6s ease-in";
-        popupWrapperMenu.style.transform = "translate(0, -100%)";
+        popupWrapperMenu.style.transform = "translate(0, -150%)";
     })
     i++;
 }
