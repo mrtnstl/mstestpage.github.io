@@ -107,7 +107,7 @@ body, html {
 }
 .hero p {
     letter-spacing: 1px;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
 }
 .hero p[class = "heroTitle"] {
     font-size: 36px;
@@ -115,8 +115,11 @@ body, html {
     letter-spacing: -3px;
 }
 .hero img {
-    width: 50px;
-    vertical-align: middle;
+    width: 140px;
+    vertical-align: bottom;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 .hero button {
     margin-top: 20px;
@@ -134,25 +137,28 @@ body, html {
     max-width: 90%;
     border-radius: 5px;
     margin: 15px 0;
-
-    image-rendering: pixelated;
-    /*image-rendering: -moz-crisp-edges;
+    padding: 15px 0;
+    /*image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;*/
 }
 .aboutOpenhours {
-    padding: 0 10px;
-    background-color: rgba(30, 143, 255, 0.178);
+    padding: 0 10px 20px 10px;
+    /*background-color: rgba(30, 143, 255, 0.178);*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+}
+.dayHighlight{
+    display: flex;
     flex-direction: column;
 }
 
 
 
 
-
-
+/*
 #map {
     height: 300px;
     width: 99%;
@@ -169,7 +175,7 @@ body, html {
     border: none;
     
 }
-
+*/
 
 
 
@@ -362,25 +368,28 @@ body, html {
     overflow-y: scroll;
     width: 100%;
     
+    
 }
 .MenuContentTable img {
     position: relative;
     width: 160px;
-    
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
     
 }
 .MenuContentTableImageWrapper {
-    background-color: rgba(255, 0, 0, 0.116);
-    border-radius: 25px;
+    
     
 }
 .MenuContentTable tr {
     border-bottom: 2px solid var(--honeyyellow);
     display: flex;
     /*width: 100%;*/
-    
-    padding-top: 20px;
-    margin: 10px 0 5px 0;
+    justify-content: space-around;
+
+    padding-top: 10px;
+    /*margin: 10px 0 5px 0;*/
 }
 
 
@@ -398,15 +407,21 @@ body, html {
         background-size: cover;
         background-attachment: fixed;
     }
-    
+    .aboutImage {
+        max-width: 60%;
+    }
+    .dayHighlight{
+        flex-direction: row;
+    }
     .popupWrapper {
-        width: 600px;
-        height: 600px;
-        /*translate: transform(-50%,-50%);*/
+        width: 100%;
+        height: 100%;
+        
+        
     }
     .popupWrapperMenu {
-        width: 600px;
-        height: 600px;
+        width: 100%;
+        height: 100;
     }
     /*.popupReserve {
         width: 50%;
@@ -429,10 +444,23 @@ body, html {
         width: 70%;
         margin: 0px auto 0px auto;
     }
+
+    .aboutUs{
+        padding: 15px 35px;
+    }
     .footer{
         /*position: absolute;
         width:70%;
         bottom: 0;*/
+    }
+    .popupWrapper {
+        width: 70%;
+        height: 100%;
+        /*translate: transform(-50%,-50%);*/
+    }
+    .popupWrapperMenu {
+        width: 70%;
+        height: 100;
     }
     
   }
