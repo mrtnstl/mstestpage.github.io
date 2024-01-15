@@ -116,7 +116,7 @@ body, html {
 }
 .hero p {
     letter-spacing: 1px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
 }
 .hero p[class = "heroTitle"] {
     font-size: 36px;
@@ -208,6 +208,9 @@ body, html {
     color: white;
     margin: 0px 10px;
     
+}
+.footer a[class="logoText"]{
+    letter-spacing: -3px;
 }
 .footer a i{
     font-size: 36px;
@@ -327,6 +330,7 @@ body, html {
 }
 .popupLogo {
     padding: 16px 0;
+    letter-spacing: -3px;
 }
 .popupShadeText {}
 
