@@ -4,14 +4,44 @@ window.addEventListener("scroll", (event) => {
     console.log(scroll);*/
     if(scrollY <= 20){
         header.style.backgroundColor = "transparent";
-        //header.style.position = "absolute";
     } else {
         header.style.backgroundColor = "black";
-        //header.style.position = "sticky";
     }
 });
 
+
+
+
+
 let popupWrapper = document.querySelector(".popupWrapper");
+let documentBody = document.querySelector("body");
+
+window.addEventListener("click", (event) => {
+    let x = event.clientX;
+    let y = event.clientY;
+    let cursorPosition = x + ' : ' + y;
+    console.log(cursorPosition);
+
+
+    
+    let bodyWidth = documentBody.offsetWidth;
+    let bodyHeight = documentBody.offsetHeight;
+    console.log("body width: "+ bodyWidth + "  body height: " + bodyHeight)
+
+    let popupWrapperHeight = popupWrapper.offsetHeight;
+    let popupWrapperWidth = popupWrapper.offsetWidth;
+    console.log("wrapper width: "+ popupWrapperWidth + "  wrapper height: " + popupWrapperHeight)
+    //if(cursorPosition != popupWrapper.)
+
+
+    console.log("BAL SZÉLE" + ((bodyWidth/2) - (popupWrapperWidth/2)));
+    console.log("JOBB SZÉLE" + ((bodyWidth/2) + ((bodyWidth/2) - (popupWrapperWidth/2))));
+    //  x <= ((bodyWidth/2) - (popupWrapperWidth/2)) || x >= ((bodyWidth/2) + ((bodyWidth/2) - (popupWrapperWidth/2)))
+})
+
+
+
+
 let popupShade = document.querySelector(".popupShade");
 
 let closeBtnObj = ["Reserve", "Contact", "Menu"];
