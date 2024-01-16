@@ -35,7 +35,7 @@ window.addEventListener("click", (event) => {
 
 
     console.log("BAL SZÉLE" + ((bodyWidth/2) - (popupWrapperWidth/2)));
-    console.log("JOBB SZÉLE" + ((bodyWidth/2) + ((bodyWidth/2) - (popupWrapperWidth/2))));
+    console.log("JOBB SZÉLE" + (((bodyWidth/2) - (popupWrapperWidth/2)) + popupWrapperWidth));
     //  x <= ((bodyWidth/2) - (popupWrapperWidth/2)) || x >= ((bodyWidth/2) + ((bodyWidth/2) - (popupWrapperWidth/2)))
 })
 
