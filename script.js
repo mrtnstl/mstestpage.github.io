@@ -4,8 +4,10 @@ window.addEventListener("scroll", (event) => {
     console.log(scroll);*/
     if(scrollY <= 20){
         header.style.backgroundColor = "transparent";
+        //header.style.position = "absolute";
     } else {
         header.style.backgroundColor = "black";
+        //header.style.position = "sticky";
     }
 });
 
