@@ -161,6 +161,13 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    border: 2px solid var(--honeyyellow);
+    border-radius: 5px;
+    padding: 15px  0;
+
+}
+.dhh{
+    padding-bottom: 15px;
 }
 .dayHighlight{
     display: flex;
@@ -427,6 +434,9 @@ body, html {
     }
     .dayHighlight{
         flex-direction: row;
+    }
+    .aboutOpenhours{
+        margin: 0 50px;
     }
     .popupWrapper {
         width: 100%;
